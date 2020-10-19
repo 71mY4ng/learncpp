@@ -2,7 +2,7 @@
 #include <vector>
 #include "WordSearch.hpp"
 
-int main() {
+void testWordSearch() {
 	std::vector<std::vector<char>> vec{
 		{'A', 'A', 'A', 'A'},
 		{'A', 'A', 'A', 'A'},
@@ -14,6 +14,11 @@ int main() {
     std::cout << ws.exist(vec, "AAAAAAAAAAAAAAAA") << std::endl;
     std::cout << ws.exist(vec, "SEE") << std::endl;
     std::cout << ws.exist(vec, "ABCB") << std::endl;
+}
+
+int main() {
+
+	testWordSearch();
 
 	return 0;
 }
